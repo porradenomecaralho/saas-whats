@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp SaaS Dashboard</title>
+  <meta name="description" content="Dashboard profissional para automação WhatsApp">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Remix Icon -->
+  <link href="cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="copecart-style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <i class="ri-chat-3-line"></i>
+      <span>Copecart</span>
+    </div>
+    
+    <a href="#" class="nav-item active">
+      <i class="ri-dashboard-line"></i>
+      <span>Dashboard</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-pulse-line"></i>
+      <span>Atividade</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-exchange-dollar-line"></i>
+      <span>Transações</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-shopping-bag-3-line"></i>
+      <span>Produtos</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-store-2-line"></i>
+      <span>Marketplace</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-user-3-line"></i>
+      <span>Usuários</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <i class="ri-book-open-line"></i>
+      <span>Academy</span>
+    </a>
+    
+    <div class="user-profile">
+      <img src="https://i.pravatar.cc/150?img=12" alt="Perfil">
+      <div class="user-info">
+        <div class="user-name">James Thornton</div>
+        <div class="user-email">james@gmail.com</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header">
+      <h1 class="page-title">Dashboard</h1>
+      <div class="date-selector">
+        04.11.23 — 02.10.25
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+    </div>
+    
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+      <div class="nav-tab">Overview</div>
+      <div class="nav-tab">Performance</div>
+      <div class="nav-tab">Subscription Products</div>
+      <div class="nav-tab">Sales</div>
+      <div class="nav-tab">Customers</div>
+      <div class="nav-tab active">Affiliates</div>
+      <div class="nav-tab">Net income/payments</div>
+    </div>
+    
+    <!-- Cards -->
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-title">Your Affiliates revenue</div>
+        <div class="card-value">
+          €297,51
+          <span class="card-badge">5%</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-title">Number of products sold by Affiliates</div>
+        <div class="card-value">
+          2.440
+          <span class="card-badge">20%</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-title">Refunds & Returns</div>
+        <div class="card-value">
+          200
+          <span>for €250,00</span>
+          <span class="card-badge">18%</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Chart Section -->
+    <div class="chart-section">
+      <div class="chart-header">
+        <div class="chart-title">Revenue performance</div>
+      </div>
+      <div class="chart-container">
+        <!-- Chart will be rendered here -->
+        <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #a0a0a0;">
+          <i class="ri-bar-chart-2-line" style="font-size: 40px; margin-right: 10px;"></i>
+          Gráfico de desempenho de receita
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div>
+          <div style="color: #a0a0a0; font-size: 12px;">Net income in</div>
+          <div style="color: #a0a0a0; font-size: 12px;">Oct 2025 - Nov 2025</div>
+          <div style="font-weight: 600; font-size: 18px;">€297,51</div>
+        </div>
+        <div>
+          <div style="color: #a0a0a0; font-size: 12px;">Net income in</div>
+          <div style="color: #a0a0a0; font-size: 12px;">Aug 2025 - Sep 2025</div>
+          <div style="font-weight: 600; font-size: 18px;">€184,00</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Affiliates Section -->
+    <div class="affiliates-section">
+      <div class="affiliates-header">
+        <div class="affiliates-title">Affiliates</div>
+        <div class="sort-dropdown">
+          Income
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+      </div>
+      
+      <div class="affiliates-table">
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=1" alt="Olivia" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Olivia Rhye</div>
+              <div class="affiliate-username">@olivia</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$3,800</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=2" alt="Phoenix" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Phoenix Baker</div>
+              <div class="affiliate-username">@phoenix</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$3,250</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=3" alt="Lana" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Lana Steiner</div>
+              <div class="affiliate-username">@lana</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$1,800</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=4" alt="Natali" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Natali Craig</div>
+              <div class="affiliate-username">@natali</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$1,550</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=5" alt="Daniel" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Daniel Foster</div>
+              <div class="affiliate-username">@olivia</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$3,800</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=6" alt="Liam" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">Liam Mitchell</div>
+              <div class="affiliate-username">@phoenix</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$3,250</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        
+        <div class="affiliate-row">
+          <div class="affiliate-info">
+            <img src="https://i.pravatar.cc/150?img=7" alt="James" class="affiliate-avatar">
+            <div>
+              <div class="affiliate-name">James Carter</div>
+              <div class="affiliate-username">@demi</div>
+            </div>
+          </div>
+          <div class="affiliate-income">$1,550</div>
+          <div class="affiliate-actions">
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Custom JavaScript -->
+  <script src="dashboard.js"></script>
+</body>
+</html>
